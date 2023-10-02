@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modals</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            font-family: Arial;
+            background-color: aquamarine;
+            font-size: 22px;
+        }
+
+        .header-title {
+            font-weight: 600;
+            font-size: x-large;
+        }
+
+        nav span {
+            padding-right: 20px;
+        }
+
+        .header-icons span {
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+
+
+        .bi-lightning-charge-fill {
+            color: gold;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+
+
+
+        .Title-Footer {
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: grey;
+        }
+
+        footer {
+            background-color: #172337;
+            color: white;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            justify-items: stretch;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .left-panel {
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            border-right: 1px solid white;
+        }
+
+        .right-panel {
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            padding-left: 20px;
+        }
+
+        footer div span {
+            display: block;
+            margin-right: 0px;
+            margin-bottom: 5px;
+
+        }
+
+        left {
+            padding-right: 0px;
+        }
+    </style>
+</head>
+
+
+<body class="container-fluid">
+    <header>
+        <div class="header-title">
+            <span>Shopper.</span>
+        </div>
+        <div>
+            <nav class="navbar">
+                <span>Home</span>
+                <span>Catalog</span>
+                <span>Shop</span>
+                <span>Pages</span>
+                <span>Blog</span>
+                <span>Docs</span>
+            </nav>
+        </div>
+        <div class="header-icons">
+            <span class="bi bi-search"></span>
+            <span class="bi bi-person"></span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-cart"></span>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="mt-4 d-flex cards row row-cols-1 row-cols-md-2 g-4">
+            <div class="card m-2" style="width: 300px;">
+                <img src="../public/images/Background-image.jpg" class="card-img-top" height="160">
+                <div class="card-header text-center">
+                    <h2 class="card-title">ASP.NET</h2>
+                    <p class="card-subtitle">Online & Offline</p>
+                </div>
+                <div class="card-body text-warning text-center" style="height: 60px;">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary w-100">Register</button>
+                </div>
+            </div>
+
+            <div class="card m-2" style="width: 300px;">
+
+                <div class="card-header text-center">
+                    <button class="btn btn-primary w-100">Register</button>
+
+                </div>
+                <div class="card-body text-warning text-center" style="height: 60px;">
+                    <h2 class="card-title">UI Web</h2>
+                    <p class="card-subtitle">Online & Offline</p>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </div>
+                <img src="../public/images/Background-image.jpg" class="card-img-bottom" height="160">
+            </div>
+
+            <div class="card m-2" style="width: 300px;">
+                <img src="../public/images/Background-image.jpg" class="card-img-top" height="160">
+                <div class="card-header text-center">
+                    <h2 class="card-title">RPA</h2>
+                    <p class="card-subtitle">Online & Offline</p>
+                </div>
+                <div class="card-body text-warning text-center" style="height: 60px;">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary w-100">Register</button>
+                </div>
+            </div>
+
+            <div class="card m-2" style="width: 300px;">
+                <img src="../public/images/Background-image.jpg" class="card-img-top" height="160">
+                <div class="card-header text-center">
+                    <h2 class="card-title">DevOps</h2>
+                    <p class="card-subtitle">Online & Offline</p>
+                </div>
+                <div class="card-body text-warning text-center" style="height: 60px;">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary w-100">Register</button>
+                </div>
+            </div>
+
+            <div class="card m-2" style="width: 300px;">
+                <img src="../public/images/Background-image.jpg" class="card-img-top" height="160">
+                <div class="card-header text-center">
+                    <h2 class="card-title">DevOps</h2>
+                    <p class="card-subtitle">Online & Offline</p>
+                </div>
+                <div class="card-body text-warning text-center" style="height: 60px;">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary w-100">Register</button>
+                </div>
+            </div>
+
+            <div class="card m-2" style="width: 300px;">
+                <img src="../public/images/Background-image.jpg" class="card-img-top" height="160">
+                <div class="card-header text-center">
+                    <h2 class="card-title">DevOps</h2>
+                    <p class="card-subtitle">Online & Offline</p>
+                </div>
+                <div class="card-body text-warning text-center" style="height: 60px;">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary w-100">Register</button>
+                </div>
+            </div>
+
+            <div class="card m-2" style="width: 300px;">
+                <img src="../public/images/Background-image.jpg" class="card-img-top" height="160">
+                <div class="card-header text-center">
+                    <h2 class="card-title">DevOps</h2>
+                    <p class="card-subtitle">Online & Offline</p>
+                </div>
+                <div class="card-body text-warning text-center" style="height: 60px;">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary w-100">Register</button>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="left-panel">
+            <div class="left">
+                <div class="Title-Footer">About Us</div>
+                <span>Contact Us</span>
+                <span>About Us</span>
+                <!-- <span>Carrers</span>
+                <span>Flipkart stories</span>
+                <span>press</span>
+                <span>Flipkartwholesale</span>
+                <span>Corpoate Information</span> -->
+            </div>
+            <div class="left">
+                <div class="Title-Footer">Help</div>
+                <span>Payments</span>
+                <span>Shipping</span>
+                <!-- <span>Cancellation & returns</span>
+                <span>FAQ</span>
+                <span>Report Infringment</span> -->
+            </div>
+            <div class="left">
+                <div class="Title-Footer"> Consumer Policy</div>
+                <span>Cancellation & returns </span>
+                <span>Terms of use</span>
+                <!-- <span> Security</span>
+                <span>Privacy</span>
+                <span>sitemap</span>
+                <span> Grivenace Redressal</span>
+                <span>EPR Compliance</span> -->
+            </div>
+            <div class="left">
+                <div class="Title-Footer">Social</div>
+                <span>Facebook</span>
+                <span>Twitter</span>
+                <span>Youtube</span>
+
+            </div>
+
+        </div>
+        <div class="right-panel">
+            <div class="right">
+                <div class="Title-Footer">Mail-Us</div>
+                <span>Flipkart Internet Private Limited,</span>
+                <span>Buildings Alyssa, Begonia &</span>
+                <!-- <span>Clove Embassy Tech Village,</span>
+                <span>Outer Ring Road, Devarabeesanahalli Village,</span>
+                <span>Bengaluru, 560103,</span>
+                <span>Karnataka, India</span> -->
+            </div>
+            <div class="right">
+                <div class="Title-Footer">Registered Office Address:</div>
+                <span>Flipkart Internet Private Limited,</span>
+                <span>Buildings Alyssa, Begonia &</span>
+                <!-- <span>Clove Embassy Tech Village,</span>
+                <span>Outer Ring Road, Devarabeesanahalli Village,</span>
+                <span>Bengaluru, 560103,</span>
+                <span>Karnataka, India</span>
+                <span>CIN : U51109KA2012PTC066107</span>
+                <span>Telephone: 044-45614700</span> -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

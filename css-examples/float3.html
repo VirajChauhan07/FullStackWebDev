@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            font-family: Arial;
+        }
+
+        .brand-title {
+            font-size: 25px;
+            font-weight: bold;
+            color: blue;
+        }
+
+        header span {
+            margin-right: 25px;
+            font-size: 20px;
+        }
+
+        .btn-buy {
+            border: none;
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+
+        .title {
+            font-size: 50px;
+            font-family: Arial;
+            width: 600px;
+            margin-left: 150px;
+            margin-top: 20px;
+        }
+
+        .title-brand {
+            color: blue;
+        }
+
+        .sub-title {
+            font-size: 23px;
+            font-family: Arial;
+            width: 500px;
+            margin-top: 50px;
+            text-align: justify;
+        }
+
+        .img-banner {
+            float: right;
+        }
+
+        .btn-view,
+        .btn-doc {
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+        }
+
+        .btn-view {
+            background-color: blue;
+            color: white;
+            border: none;
+        }
+
+        .btn-doc {
+            background-color: whitesmoke;
+            border: none;
+        }
+    </style>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <span class="brand-title">Landkit.</span>
+        </div>
+        <div>
+            <span>Landings</span>
+            <span>Pages</span>
+            <span>Account</span>
+            <span>Documentation</span>
+        </div>
+        <div>
+            <button class="btn-buy">Buy now</button>
+        </div>
+    </header>
+    <section>
+        <div>
+            <img src="../public/images/Netflix-banner.jpg" width="600" class="img-banner">
+            <div class="title">
+                Welcome to <span class="title-brand">Landkit.</span>
+                Develop anything.
+                <div class="sub-title">Build a beautiful, modern website with flexible Bootstrap components built from
+                    scratch.</div>
+                <button class="btn-view"> View All Pages <span class="bi bi-arrow-right"></span> </button>
+                <button class="btn-doc"> Documentation </button>
+            </div>
+
+
+        </div>
+
+    </section>
+</body>
+
+</html>

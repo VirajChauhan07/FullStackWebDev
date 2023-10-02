@@ -1,0 +1,71 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p[class~="Effects"] {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="Effects">Para-1</p>
+    <p class="Para Effects">Para-2</p>
+    <p class="Effects Para">Para-3</p>
+    <p class="Para-Effects">Para-4</p>
+    <p class="Effects-Para">Para-5</p>
+    <p class="Text-Effects-Para">Para-6</p>
+    <p class="Text Effects Para">Para-7</p>
+    <p class="Para Text Effects">Para-8</p>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        #UserName:focus+div {
+            display: block;
+            color: goldenrod;
+        }
+
+        #UserName+div {
+            display: none;
+        }
+
+        #Email:read-only {
+            cursor: not-allowed;
+        }
+
+        button:disabled {
+            background-color: gray;
+            color: white;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body>
+    <dl>
+        <dt>User Name</dt>
+        <dd>
+            <input type="text" id="UserName">
+            <div><span class="bi bi-lightbulb"></span>Name in Block Letters</div>
+        </dd>
+        <dt>Email</dt>
+        <dd><input type="email" id="Email" value=&quot;john@gmail.com" readonly></dd>
+    </dl>
+    <button disabled>Register</button>
+</body>
+
+</html>

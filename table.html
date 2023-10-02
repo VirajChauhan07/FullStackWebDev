@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Creation</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        img {
+            border-radius: 30px;
+            border: 1px solid black;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: rgb(19, 17, 30);
+            color: white;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 20px;
+            padding-bottom: 15px;
+        }
+
+        tr:hover {
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+
+<body>
+    <table width="100%" border="1">
+        <caption>Product list</caption>
+        <colgroup span="4"></colgroup>
+        <thead>
+            <tr>
+                <th>
+                    Name<span class="bi bi-sort-alpha-down"></span>
+                </th>
+                <th>Price <span class="bi bi-sort-alpha-down"></span></th>
+                <th>Stock <span class="bi bi-sort-alpha-down"></span> </th>
+                <th>Preview</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody align="center">
+            <tr>
+                <td>Realme Gold</td>
+                <td>&#8377; 12,999/-</td>
+                <td>Available</td>
+                <td><img src="public/images/RealmeGold.jpg" alt="" width="50px" height="50px"></td>
+                <td class="info">
+                    <a href="#"> <span class="bi bi-eye-fill"></span> Details</a>|
+                    <a href="#"> <span class="bi bi-pen-fill"></span> Edit</a>|
+                    <a href="#"> <span class="bi bi-trash-fill"></span> Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Realme Black</td>
+                <td>&#8377; 12,999/-</td>
+                <td>Available</td>
+                <td>
+                    <img src="public/images/Realme black.jpg" width="50" height="50">
+                </td>
+                <td class="info">
+                    <a href="#"> <span class="bi bi-eye-fill"></span> Details</a> |
+                    <a href="#"> <span class="bi bi-pen-fill"></span> Edit</a> |
+                    <a href="#"> <span class="bi bi-trash-fill"></span> Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Samsung A01</td>
+                <td>&#8377; 16,999/-</td>
+                <td>Available</td>
+                <td>
+                    <img src="public/images/iphoneXS.jpg" width="50" height="50">
+                </td>
+                <td class="info">
+                    <a href="#"> <span class="bi bi-eye-fill"></span> Details</a> |
+                    <a href="#"> <span class="bi bi-pen-fill"></span> Edit</a> |
+                    <a href="#"> <span class="bi bi-trash-fill"></span> Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Samsung A10S</td>
+                <td>&#8377; 19,999/-</td>
+                <td>Available</td>
+                <td>
+                    <img src="public/images/iphoneXS Max.jpg" width="50" height="50">
+                </td>
+                <td class="info">
+                    <a href="#"> <span class="bi bi-eye-fill"></span> Details</a> |
+                    <a href="#"> <span class="bi bi-pen-fill"></span> Edit</a> |
+                    <a href="#"> <span class="bi bi-trash-fill"></span> Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>iphone XR</td>
+                <td>&#8377; 64,000/-</td>
+                <td>Available</td>
+                <td>
+                    <img src="public/images/iphoneXS.jpg" width="50" height="50">
+                </td>
+                <td class="info">
+                    <a href="#"> <span class="bi bi-eye-fill"></span> Details</a> |
+                    <a href="#"> <span class="bi bi-pen-fill"></span> Edit</a> |
+                    <a href="#"> <span class="bi bi-trash-fill"></span> Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>iphone XS</td>
+                <td>&#8377; 99,000/-</td>
+                <td>Available</td>
+                <td>
+                    <img src="public/images/iphoneXR.jpg" width="50" height="50">
+                </td>
+                <td class="info">
+                    <a href="#"> <span class="bi bi-eye-fill"></span> Details</a> |
+                    <a href="#"> <span class="bi bi-pen-fill"></span> Edit</a> |
+                    <a href="#"> <span class="bi bi-trash-fill"></span> Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>iphone XS MAX</td>
+                <td>&#8377; 1,09,000/-</td>
+                <td>Available</td>
+                <td>
+                    <img src="public/images/iphoneXS Max.jpg" width="50" height="50">
+                </td>
+                <td class="info">
+                    <a href="#"> <span class="bi bi-eye-fill"></span> Details</a> |
+                    <a href="#"> <span class="bi bi-pen-fill"></span> Edit</a> |
+                    <a href="#"> <span class="bi bi-trash-fill"></span> Delete</a>
+                </td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+
+                <td colspan="5" align="center">&copy; Copyright 2023</td>
+
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

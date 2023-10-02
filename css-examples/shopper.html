@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+
+    <style>
+        header {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            font-family: Arial;
+        }
+
+        .header-title {
+            font-weight: 600;
+            font-size: x-large;
+        }
+
+        nav span {
+            padding-right: 20px;
+        }
+
+        .header-icons span {
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        article {
+            background-color: black;
+            text-align: center;
+            color: white;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .bi-lightning-charge-fill {
+            color: gold;
+        }
+
+        .three-styling {
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            margin-top: 15px;
+        }
+
+        .three-styling:hover {
+            cursor: pointer;
+        }
+
+        #mens-image {
+            z-index: 0;
+        }
+
+        #mens-text {
+            z-index: 1;
+            margin-top: -280px;
+            margin-left: 220px;
+            color: white;
+        }
+
+        .shop-men {
+            margin-left: 170px;
+            margin-top: 160px;
+        }
+
+        .facility {
+            margin: 45px;
+            margin-left: 130px;
+            margin-right: 130px;
+            display: flex;
+            justify-content: space-evenly;
+            box-shadow: whitesmoke 2px 1px 1px 1px;
+            padding: 20px;
+        }
+
+        .bi-truck {
+            color: orangered;
+        }
+
+        .bi-currency-exchange {
+            color: orangered;
+        }
+
+        .bi-lock {
+            color: orangered;
+        }
+
+        .bi-tag {
+            color: orangered;
+        }
+
+        .subtitle {
+            color: gray;
+        }
+
+        .title2 {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .t2subtitle1 {
+            color: gray;
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+
+        .t2subtitle3 {
+            opacity: 0.9;
+            margin-top: 20px;
+        }
+
+        .banner {
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            width: 100%;
+            height: 1000px;
+            padding: 0 150px 0 150px;
+            margin: 40px;
+        }
+
+        .banner:hover {
+            cursor: pointer;
+        }
+
+        .gridimage1 {
+            grid-row: 1;
+            grid-column: 1/2;
+
+        }
+
+        .gridimage1:hover {
+            transform: translateX(-2px);
+
+        }
+
+
+        .gridimage2:hover {
+            transform: translateX(-2px)
+        }
+
+        .gridimage3:hover {
+            transform: translateX(-2px)
+        }
+
+        .gridimage4:hover {
+            transform: translateX(-2px)
+        }
+
+        .gridimage2 {
+            grid-row: 1;
+            grid-column: 2/3;
+            margin-left: -240px;
+        }
+
+        .gridimage3 {
+            grid-row: 2;
+            grid-column: 1/2;
+            margin-top: -240px;
+        }
+
+        .gridimage4 {
+            grid-row: 2;
+            grid-column: 2/3;
+            margin-left: 30px;
+            margin-top: -240px;
+        }
+
+        #grid-images1 {
+            z-index: 0;
+        }
+
+        #grid-images2 {
+            z-index: 0;
+        }
+
+        #grid-images3 {
+            z-index: 0;
+
+        }
+
+        #grid-images4 {
+            z-index: 0;
+        }
+
+
+
+        #grid-image1 {
+            z-index: 1;
+            margin-top: -10rem;
+            margin-left: 100px;
+            color: white;
+        }
+
+        #grid-image2 {
+            z-index: 1;
+            margin-top: -140px;
+            margin-left: 100px;
+            color: white;
+        }
+
+        #grid-image3 {
+            z-index: 1;
+            margin-top: -240px;
+            margin-left: 100px;
+
+        }
+
+        #grid-image4 {
+            z-index: 1;
+            margin-top: -240px;
+            margin-left: 100px;
+        }
+
+
+
+        #shop-now {
+            z-index: 2;
+            margin-left: 150px;
+            /* background-color: transparent; */
+        }
+
+        #shop-now2 {
+            z-index: 2;
+            margin-left: 150px;
+        }
+
+
+        .spanshop-now {
+            color: white;
+            font-size: 15px;
+        }
+
+        .spanshop-now2 {
+            color: black;
+        }
+
+        .header2 {
+            text-align: center;
+            margin-top: -100px;
+        }
+
+        .nav2 button {
+            border-style: hidden;
+            background-color: white;
+        }
+
+        .nav2 button:first-child {
+            border-bottom-style: solid;
+            border-color: orangered;
+            color: orangered;
+        }
+
+        .nav2 button:nth-child(2):hover {
+            border-bottom-style: solid;
+            border-color: orangered;
+            color: orangered;
+        }
+
+        .nav2 button:last-child:hover {
+            border-bottom-style: solid;
+            border-color: orangered;
+            color: orangered;
+        }
+
+        .grid2 {
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            height: 400px;
+            margin-top: 20px;
+            padding: 0px 150px 0px 150px;
+            column-gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .grid2:hover {
+            cursor: pointer;
+        }
+
+        .grid3 {
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            height: 400px;
+            margin-top: 20px;
+            padding: 0px 150px 0px 150px;
+            column-gap: 30px;
+        }
+
+        .grid3:hover {
+            cursor: pointer;
+        }
+
+        .kids {
+            width: 258px;
+            height: 300px;
+            background-image: url("../public/images/sandal.jpg");
+            background-size: cover;
+            justify-content: center;
+            padding: 50px;
+
+        }
+
+        .kids .buttons {
+            display: flex;
+            display: none;
+            overflow: hidden;
+            /* margin-top: 140%; */
+            transition: 3s;
+        }
+
+        .kids:hover .buttons {
+            display: flex;
+            overflow: hidden;
+            margin-top: 120%;
+            transition: 3s;
+        }
+
+        .kids:hover {
+            background-image: url("../public/images/shoes.jpg");
+            background-size: cover;
+        }
+
+        .buttons span {
+            font-size: 18px;
+            margin-right: 20px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 50%
+        }
+
+        .product {
+            opacity: 0.5;
+            font-size: smaller;
+            margin-top: 20px;
+        }
+
+        .productprice {
+            color: gray;
+        }
+
+        .discover {
+            border-bottom-style: solid;
+        }
+
+        .carousel {
+            padding: 0px 150px 0px 150px;
+        }
+
+        .bi-star-fill {
+            color: gold;
+        }
+
+        .carousel-indicators input[type='radio'] {
+            height: 15px;
+            width: 15px;
+        }
+
+        .brands {
+            padding: 0px 150px 0px 150px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            height: 500px;
+        }
+
+        .inputemail {
+            height: 60px;
+            width: 350px;
+            background-color: gray;
+            color: white;
+        }
+
+        .inputemail::placeholder {
+            color: white;
+            opacity: 1;
+            padding-left: 20px;
+        }
+
+        .submitemail {
+            background-color: gray;
+            opacity: 0.9;
+            color: white;
+            font-weight: bold;
+        }
+
+        .icons span {
+            padding-right: 10px;
+        }
+
+        .imageseticon img:hover {
+            opacity: 0.5;
+        }
+
+        .insideimage span {
+            display: none;
+            /* margin-top: 140%; */
+            transition: 3s;
+        }
+
+
+
+        .imageseticon:hover .insideimage {
+            display: contents;
+            transition: 3s;
+        }
+
+        .footerend {
+            padding: 0px 150px 0px 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-title">
+            <span>Shopper.</span>
+        </div>
+        <div>
+            <nav class="navbar">
+                <span>Home</span>
+                <span>Catalog</span>
+                <span>Shop</span>
+                <span>Pages</span>
+                <span>Blog</span>
+                <span>Docs</span>
+            </nav>
+        </div>
+        <div class="header-icons">
+            <span class="bi bi-search"></span>
+            <span class="bi bi-person"></span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-cart"></span>
+        </div>
+    </header>
+
+    <article>
+        <span class="bi bi-lightning-charge-fill"></span>
+        <span>HAPPY HOLIDAY DEALS ON EVERYTHING</span>
+        <span class="bi bi-lightning-charge-fill"></span>
+    </article>
+
+    <div>
+        <div class="three-styling">
+            <span>
+                <img id="mens-image" src="../public/images/mens-styling.jpg" alt="" height="470px" width="512px" />
+                <div id="mens-text">
+                    <h3>Mens</h3>
+                </div>
+                <div class="shop-men">
+                    <button class="p-3 ps-4 pe-4 border-0">
+                        <span>
+                            shop men
+                            <span class="bi bi-arrow-right ps-2"></span>
+                        </span>
+                    </button>
+                </div>
+            </span>
+            <span>
+                <img id="mens-image" src="../public/images/women-dressing.jpg" alt="" height="470px" width="512px" />
+                <div id="mens-text">
+                    <h3>Womens</h3>
+                </div>
+                <div class="shop-men">
+                    <button class="p-3 ps-4 pe-4 border-0">
+                        <span>
+                            shop women
+                            <span class="bi bi-arrow-right ps-2"></span>
+                        </span>
+                    </button>
+                </div>
+            </span>
+            <span>
+                <img id="mens-image" src="../public/images/kids-styling.jpg" alt="" height="470px" width="512px" />
+                <div id="mens-text">
+                    <h3>Kids</h3>
+                </div>
+                <div class="shop-men">
+                    <button class="p-3 ps-4 pe-4 border-0">
+                        <span>
+                            shop kids
+                            <span class="bi bi-arrow-right ps-2"></span>
+                        </span>
+                    </button>
+                </div>
+            </span>
+        </div>
+    </div>
+
+    <div class="facility">
+        <div>
+            <div>
+                <span class="bi bi-truck"></span><span class="ps-2"> FREE SHIPPING </span>
+            </div>
+
+            <div class="subtitle">
+                <span>&#160; &#160; &#160; From all orders over 100$</span>
+                <span></span>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <span class="bi bi-currency-exchange"></span><span class="ps-2"> FREE Returns </span>
+            </div>
+
+            <div class="subtitle">
+                <span>&#160; &#160; &#160; Return money with in 30 days</span>
+                <span></span>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <span class="bi bi-lock"></span><span class="ps-2">Secure shopping</span>
+            </div>
+
+            <div class="subtitle">
+                <span>&#160; &#160; &#160; Your'e in safe hands</span> <span></span>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <span class="bi bi-tag"></span><span class="ps-2"> over 10000 styles </span>
+            </div>
+
+            <div class="subtitle">
+                <span>&#160; &#160; &#160; We have every thing you need</span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="title2">
+        <div class="t2subtitle1">NEW COLLECTION</div>
+
+        <div>
+            <h2>Best Picks 2019</h2>
+        </div>
+
+        <div class="t2subtitle3">
+            <div>
+                Appear, dry there darkness they're seas, dry waters thing fly midst.
+                Beast,
+            </div>
+            <div>above fly brought Very green.</div>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="gridimage1" id="grid-images1">
+            <img src="../public/images/bags-Collection.jpg" alt="" height="400px" width="380px" />
+            <div id="grid-image1">
+                <h3>Bags Collection</h3>
+            </div>
+            <div class="shop-now" id="shop-now">
+                <span class="spanshop-now">
+                    shop now
+                    <span class="bi bi-arrow-right ps-2"></span>
+                </span>
+            </div>
+        </div>
+        <div class="gridimage2" id="grid-images2">
+            <img src="../public/images/men-printedshirt.jpg" alt="" height="400px" width="650px" />
+            <div id="grid-image2">
+                <h3>Printed Men Shirts</h3>
+            </div>
+            <div class="shop-now" id="shop-now">
+                <span class="spanshop-now">
+                    shop now
+                    <span class="bi bi-arrow-right ps-2"></span>
+                </span>
+            </div>
+        </div>
+        <div class="gridimage3 pt-4" id="grid-images3">
+            <img src="../public/images/woman-basicdress.jpg" alt="" height="400px" width="650px" />
+            <div id="grid-image3">
+                <h3>Basic Woman Dress</h3>
+            </div>
+            <div class="shop-now" id="shop-now2">
+                <span class="spanshop-now2">
+                    shop now
+                    <span class="bi bi-arrow-right ps-2"></span>
+                </span>
+            </div>
+        </div>
+        <div class="gridimage4 pt-4" id="grid-images4">
+            <img src="../public/images/woman-sweatshirt.jpg" alt="" height="400px" width="380px" />
+            <div id="grid-image4">
+                <h3>Sweat Shirts</h3>
+            </div>
+            <div class="shop-now" id="shop-now2">
+                <span class="spanshop-now2">
+                    shop now
+                    <span class="bi bi-arrow-right ps-2"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="header2">
+            <div>
+                <h3>Top Month Sellers</h3>
+            </div>
+            <div>
+                <header>
+                    <div>
+                        <nav class="nav2">
+                            <button>Women</button>
+                            <button>Men</button>
+                            <button>Kids</button>
+                        </nav>
+                    </div>
+                </header>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="grid2">
+            <div class="Sec-gridimage1 ">
+                <div class="kids">
+                    <div class="buttons">
+                        <span class="bi bi-eye"></span>
+                        <span class="bi bi-heart"></span>
+                        <span class="bi bi-cart"></span>
+                    </div>
+                </div>
+                <div>
+                    <h6 class="product">Shoes</h6>
+                    <h6 class="productname">Leather Mids Heel Sandals</h6>
+                    <h6 class="productprice">&dollar; 129</h6>
+                </div>
+            </div>
+            <div class="Sec-gridimage2 ">
+                <div class="kids">
+                    <div class="buttons">
+                        <span class="bi bi-eye"></span>
+                        <span class="bi bi-heart"></span>
+                        <span class="bi bi-cart"></span>
+                    </div>
+                </div>
+                <div>
+                    <h6 class="product">Shoes</h6>
+                    <h6 class="productname">Leather Mids Heel Sandals</h6>
+                    <h6 class="productprice">&dollar; 129</h6>
+                </div>
+            </div>
+            <div class="Sec-gridimage3 ">
+                <div class="kids">
+                    <div class="buttons">
+                        <span class="bi bi-eye"></span>
+                        <span class="bi bi-heart"></span>
+                        <span class="bi bi-cart"></span>
+                    </div>
+                </div>
+                <div>
+                    <h6 class="product">Shoes</h6>
+                    <h6 class="productname">Leather Mids Heel Sandals</h6>
+                    <h6 class="productprice">&dollar; 129</h6>
+                </div>
+            </div>
+            <div class="Sec-gridimage4 ">
+                <div class="kids">
+                    <div class="buttons">
+                        <span class="bi bi-eye"></span>
+                        <span class="bi bi-heart"></span>
+                        <span class="bi bi-cart"></span>
+                    </div>
+                </div>
+                <div>
+                    <h6 class="product">Shoes</h6>
+                    <h6 class="productname">Leather Mids Heel Sandals</h6>
+                    <h6 class="productprice">&dollar; 129</h6>
+                </div>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+
+    <div>
+        <div class="grid3">
+            <div class="Sec-gridimage5">
+                <div class="kids">
+                    <div class="buttons">
+                        <span class="bi bi-eye"></span>
+                        <span class="bi bi-heart"></span>
+                        <span class="bi bi-cart"></span>
+                    </div>
+                </div>
+                <div>
+                    <h6 class="product">Shoes</h6>
+                    <h6 class="productname">Leather Mids Heel Sandals</h6>
+                    <h6 class="productprice">&dollar; 129</h6>
+                </div>
+            </div>
+            <div class="Sec-gridimage6 ">
+                <div class="kids">
+                    <div class="buttons">
+                        <span class="bi bi-eye"></span>
+                        <span class="bi bi-heart"></span>
+                        <span class="bi bi-cart"></span>
+                    </div>
+                </div>
+                <div>
+                    <h6 class="product">Shoes</h6>
+                    <h6 class="productname">Leather Mids Heel Sandals</h6>
+                    <h6 class="productprice">&dollar; 129</h6>
+                </div>
+            </div>
+            <div class="Sec-gridimage7">
+                <div class="kids">
+                    <div class="buttons">
+                        <span class="bi bi-eye"></span>
+                        <span class="bi bi-heart"></span>
+                        <span class="bi bi-cart"></span>
+                    </div>
+                </div>
+                <div>
+                    <h6 class="product">Shoes</h6>
+                    <h6 class="productname">Leather Mids Heel Sandals</h6>
+                    <h6 class="productprice">&dollar; 129</h6>
+                </div>
+            </div>
+            <div class="Sec-gridimage8 ">
+                <div class="kids">
+                    <div class="buttons">
+                        <span class="bi bi-eye"></span>
+                        <span class="bi bi-heart"></span>
+                        <span class="bi bi-cart"></span>
+                    </div>
+                </div>
+                <div>
+                    <h6 class="product">Shoes</h6>
+                    <h6 class="productname">Leather Mids Heel Sandals</h6>
+                    <h6 class="productprice">&dollar; 129</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="fw-bold d-flex justify-content-center ">
+            <span class="discover pe-3 ps-3 mt-3">Discover more</span>
+        </div>
+    </div>
+
+    <div>
+        <div class="mt-5 bg-cover">
+            <img src="../public/images/Screenshot 2023-09-04 085816.jpg" alt="" height="600px" width="100%">
+        </div>
+    </div>
+
+    <div>
+        <div class="commnets mt-5 text-center opacity-75 "> What Buyers say</div>
+        <div class="subtitle-comment text-center mt-3">
+            <h2>Latest Buyers Reveiws</h2>
+        </div>
+    </div>
+    <!-- 
+    <div>
+        <div id="mainCarousel" class=" mainCarousel carousel slide w-100" data-bs-ride="carousel">
+            <div class="carousel-inner w-100" role="listbox">
+                <div class="carousel-item active">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body d-block">
+                                <img src="../public/images/BagsAmazon.jpg" alt="" height="200px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="col-md-4">
+                        <div class="card">
+
+                            <div class="card-body">
+                                <img src="../public/images/BagsAmazon.jpg" alt="" height="200px">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+
+                            </div>
+                            <div class="card-body">
+                                <img src="../public/images/BagsAmazon.jpg" alt="">
+                            </div>
+                            <div class="card-footer">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#mainCarousel">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#mainCarousel">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div> -->
+
+    <div class="row mx-auto my-auto mt-5 mb-5">
+        <div class="carousel carousel-dark" id="banners" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active d-flex">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <!-- <img src="../public/images/Background-image.jpg" height="250" class="w-100 d-block"> -->
+                                <div class="d-flex">
+                                    <div>
+                                        <img src="../public/images/shoes.jpg" alt="" height="50px" width="50px">
+                                    </div>
+                                    <div class="ps-3">
+                                        <div>Shoes</div>
+                                        <div>Low sneaker</div>
+                                        <div>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="opacity-75 pt-3">
+                                        <p>from creepth aid moved given inside make multiply of him shall itself also
+                                            above second doesn't turned created saying landing herb said midist night
+                                            wherein </p>
+                                    </div>
+                                    <div class="opacity-75">
+                                        logan edwards,01 jun 2019
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <!-- <img src="../public/images/BagsAmazon.jpg" height="250" class="w-100 d-block">
+                                 -->
+                                <div class="d-flex">
+                                    <div>
+                                        <img src="../public/images/shoes.jpg" alt="" height="50px" width="50px">
+                                    </div>
+                                    <div class="ps-3">
+                                        <div>Shoes</div>
+                                        <div>Low sneaker</div>
+                                        <div>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="opacity-75 pt-3">
+                                        <p>from creepth aid moved given inside make multiply of him shall itself also
+                                            above second doesn't turned created saying landing herb said midist night
+                                            wherein </p>
+                                    </div>
+                                    <div class="opacity-75">
+                                        logan edwards,01 jun 2019
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <div class="d-flex">
+                                    <div>
+                                        <img src="../public/images/shoes.jpg" alt="" height="50px" width="50px">
+                                    </div>
+                                    <div class="ps-3">
+                                        <div>Shoes</div>
+                                        <div>Low sneaker</div>
+                                        <div>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="opacity-75 pt-3">
+                                        <p>from creepth aid moved given inside make multiply of him shall itself also
+                                            above second doesn't turned created saying landing herb said midist night
+                                            wherein </p>
+                                    </div>
+                                    <div class="opacity-75">
+                                        logan edwards,01 jun 2019
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <div class="d-flex">
+                                    <div>
+                                        <img src="../public/images/shoes.jpg" alt="" height="50px" width="50px">
+                                    </div>
+                                    <div class="ps-3">
+                                        <div>Shoes</div>
+                                        <div>Low sneaker</div>
+                                        <div>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="opacity-75 pt-3">
+                                        <p>from creepth aid moved given inside make multiply of him shall itself also
+                                            above second doesn't turned created saying landing herb said midist night
+                                            wherein </p>
+                                    </div>
+                                    <div class="opacity-75">
+                                        logan edwards,01 jun 2019
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <div class="d-flex">
+                                    <div>
+                                        <img src="../public/images/shoes.jpg" alt="" height="50px" width="50px">
+                                    </div>
+                                    <div class="ps-3">
+                                        <div>Shoes</div>
+                                        <div>Low sneaker</div>
+                                        <div>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="opacity-75 pt-3">
+                                        <p>from creepth aid moved given inside make multiply of him shall itself also
+                                            above second doesn't turned created saying landing herb said midist night
+                                            wherein </p>
+                                    </div>
+                                    <div class="opacity-75">
+                                        logan edwards,01 jun 2019
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <div class="d-flex">
+                                    <div>
+                                        <img src="../public/images/shoes.jpg" alt="" height="50px" width="50px">
+                                    </div>
+                                    <div class="ps-3">
+                                        <div>Shoes</div>
+                                        <div>Low sneaker</div>
+                                        <div>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="opacity-75 pt-3">
+                                        <p>from creepth aid moved given inside make multiply of him shall itself also
+                                            above second doesn't turned created saying landing herb said midist night
+                                            wherein </p>
+                                    </div>
+                                    <div class="opacity-75">
+                                        logan edwards,01 jun 2019
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <div class="d-flex">
+                                    <div>
+                                        <img src="../public/images/shoes.jpg" alt="" height="50px" width="50px">
+                                    </div>
+                                    <div class="ps-3">
+                                        <div>Shoes</div>
+                                        <div>Low sneaker</div>
+                                        <div>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="opacity-75 pt-3">
+                                        <p>from creepth aid moved given inside make multiply of him shall itself also
+                                            above second doesn't turned created saying landing herb said midist night
+                                            wherein </p>
+                                    </div>
+                                    <div class="opacity-75">
+                                        logan edwards,01 jun 2019
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <div class="d-flex">
+                                    <div>
+                                        <img src="../public/images/shoes.jpg" alt="" height="50px" width="50px">
+                                    </div>
+                                    <div class="ps-3">
+                                        <div>Shoes</div>
+                                        <div>Low sneaker</div>
+                                        <div>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="opacity-75 pt-3">
+                                        <p>from creepth aid moved given inside make multiply of him shall itself also
+                                            above second doesn't turned created saying landing herb said midist night
+                                            wherein </p>
+                                    </div>
+                                    <div class="opacity-75">
+                                        logan edwards,01 jun 2019
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <div class="d-flex">
+                                    <div>
+                                        <img src="../public/images/shoes.jpg" alt="" height="50px" width="50px">
+                                    </div>
+                                    <div class="ps-3">
+                                        <div>Shoes</div>
+                                        <div>Low sneaker</div>
+                                        <div>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                            <span class="bi bi-star-fill "></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="opacity-75 pt-3">
+                                        <p>from creepth aid moved given inside make multiply of him shall itself also
+                                            above second doesn't turned created saying landing herb said midist night
+                                            wherein </p>
+                                    </div>
+                                    <div class="opacity-75">
+                                        logan edwards,01 jun 2019
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#banners">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#banners">
+                <span class="carousel-control-next-icon"></span>
+            </button> -->
+            <div class="carousel-indicators">
+                <input type="radio" class="active" data-bs-slide-to="0" data-bs-target="#banners"></input>
+                <input type="radio" data-bs-slide-to="1" data-bs-target="#banners"></input>
+                <input type="radio" data-bs-slide-to="2" data-bs-target="#banners"></input>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="text-center m-5 brands">
+        <div>
+            <h2>@shopper</h2>
+        </div>
+        <div class="mb-5 fs-5">
+            Appear, dry there darkness they're seas, dry waters.
+        </div>
+
+        <div class="d-flex gap-3 imageseticon">
+            <div>
+                <img src="../public/images/Preview - Bootstrap Themes_files/product-13.jpg" alt="" height="180px"
+                    width="180px">
+                <div>
+                    <div class="insideimage">
+                        <span class="bi bi-heart"></span>
+                        <span>748</span>
+                        <span class="bi bi-card-text"></span>
+                        <span>48</span>
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <img src="../public/images/Preview - Bootstrap Themes_files/product-14.jpg" alt="" height="180px"
+                    width="180px">
+            </div>
+            <div>
+                <img src="../public/images/Preview - Bootstrap Themes_files/product-15.jpg" alt="" height="180px"
+                    width="180px">
+            </div>
+            <div>
+                <img src="../public/images/Preview - Bootstrap Themes_files/product-16.jpg" alt="" height="180px"
+                    width="180px">
+            </div>
+            <div>
+                <img src="../public/images/Preview - Bootstrap Themes_files/product-17.jpg" alt="" height="180px"
+                    width="180px">
+            </div>
+            <div>
+                <img src="../public/images/Preview - Bootstrap Themes_files/product-18.jpg" alt="" height="180px"
+                    width="180px">
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-evenly mt-5 ">
+            <div>
+                <img src="../public/images/Preview - Bootstrap Themes_files/adidas.svg" alt="">
+            </div>
+            <div>
+                <img src="../public/images/Preview - Bootstrap Themes_files/maestro.svg" alt="">
+            </div>
+            <div>
+                <img src="../public/images/Preview - Bootstrap Themes_files/asos.svg" alt="">
+            </div>
+            <div>
+                <img src="../public/images/Preview - Bootstrap Themes_files/bershka.svg" alt="">
+            </div>
+            <div>
+                <img src="../public/images/Preview - Bootstrap Themes_files/zara.svg" alt="">
+            </div>
+            <div>
+                <img src="../public/images/Preview - Bootstrap Themes_files/reebok.svg" alt="">
+            </div>
+            <div>
+                <img src="../public/images/Preview - Bootstrap Themes_files/stradivarius.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="pt-5">
+            <div class="fs-4 mt-5 headingfooter text-center">
+                Want style Ideas and Treats?
+            </div>
+            <div class="d-flex justify-content-center pt-3">
+                <div class="me-3">
+                    <input type="email" name="Email" id="Email" placeholder="Enter email *" class="inputemail">
+                </div>
+                <div>
+                    <button type="submit" class="p-3 submitemail">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-evenly mt-5 mb-5">
+            <div>
+                <div class="fw-bold ">
+                    <h2>Shopper.</h2>
+                </div>
+                <div class="icons">
+                    <span class="bi bi-instagram"></span>
+                    <span class="bi bi-facebook"></span>
+                    <span class="bi bi-twitter"></span>
+                    <span class="bi bi-youtube"></span>
+                    <span class="bi bi-github"></span>
+                </div>
+            </div>
+            <div>
+                <div class="bold mb-2">Support</div>
+                <div class="opacity-50">
+                    <div>Contact Us</div>
+                    <div>FAQs</div>
+                    <div>Size Guide</div>
+                    <div>Shipping & Returns</div>
+                </div>
+            </div>
+            <div>
+                <div class="bold mb-2">Shop</div>
+                <div class="opacity-50">
+                    <div>Men's Shopping</div>
+                    <div>Women's Shopping</div>
+                    <div>Kids Shopping</div>
+                    <div>Discounts</div>
+                </div>
+            </div>
+            <div>
+                <div class="bold mb-2">Company</div>
+                <div class="opacity-50">
+                    <div>Our Story</div>
+                    <div>Careers</div>
+                    <div>Terms & Condition</div>
+                    <div>Privacy & Cookie policy</div>
+                </div>
+            </div>
+            <div>
+                <div class="bold mb-2">Contact</div>
+                <div class="opacity-50">
+                    <div>1-202-555-0105</div>
+                    <div>1-202-555-0106</div>
+                    <div>help@shopper.com</div>
+
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div>
+            <div class="d-flex justify-content-between footerend">
+                <div>
+                    <p>@2019 All rights ar reserved Designed by Unavb</p>
+                </div>
+                <div>
+                    <span><img src="../public/images/Preview - Bootstrap Themes_files/visa.svg" alt=""></span>
+                    <span><img src="../public/images/Preview - Bootstrap Themes_files/mastercard.svg" alt=""></span>
+                    <span><img src="../public/images/Preview - Bootstrap Themes_files/amex.svg" alt=""></span>
+                    <span><img src="../public/images/Preview - Bootstrap Themes_files/paypal.svg" alt=""></span>
+                    <span><img src="../public/images/Preview - Bootstrap Themes_files/klarna.svg" alt=""></span>
+                    <span><img src="../public/images/Preview - Bootstrap Themes_files/maestro.svg" alt=""></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

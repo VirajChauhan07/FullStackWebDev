@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script type="text/javascript">
+        function RegisterClick() {
+
+            document.getElementById("detailsContainer").style.display = "block";
+            document.getElementById("btnContainer").style.display = "none";
+
+            document.getElementById("lblName").innerText = document.getElementById("txtName").value;
+            document.getElementById("lblPrice").innerText = document.getElementById("txtPrice").value;
+            document.getElementById("lblCity").innerText = document.getElementById("lstCities").value;
+
+            stockCheckBox = document.getElementById("chkStock");
+            status = "";
+
+            if (stockCheckBox.checked) {
+                status = "Available";
+            } else {
+                status = "Out of Stock";
+            }
+
+            document.getElementById("lblStock").innerText = status;
+
+        }
+
+        function EditClick() {
+            document.getElementById("btnRegister").innerHTML = "Save";
+            document.getElementById("btnRegister").className = "btn btn-success";
+            document.getElementById("frmTitle").innerHTML = "Update Product";
+        }
+    </script>
+</head>
+
+<body class="container-fluid">
+    <div id="btnContainer" class="mt-3">
+        <button data-bs-target="#register" data-bs-toggle="modal" class="btn btn-primary">Register Product</button>
+    </div>
+    <div class="modal fade" id="register">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="frmTitle">Register Product</h3>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt>Name</dt>
+                        <dd><input type="text" class="form-control" id="txtName"></dd>
+                        <dt>Price</dt>
+                        <dd><input type="number" class="form-control" id="txtPrice"></dd>
+                        <dt>City</dt>
+                        <dd>
+                            <select class="form-select" id="lstCities">
+                                <option>Select City</option>
+                                <option>Delhi</option>
+                                <option>Hyd</option>
+                            </select>
+                        </dd>
+                        <dt>Stock</dt>
+                        <dd class="form-switch">
+                            <input class="form-check-input" type="checkbox" id="chkStock"> <label
+                                class="form-check-label">Available</label>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button onclick="RegisterClick()" data-bs-dismiss="modal" id="btnRegister"
+                        class="btn btn-primary">Register</button>
+                    <button data-bs-dismiss="modal" id="btnCancel" class="btn btn-danger">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="detailsContainer" class="w-25" style="display: none;">
+        <dl>
+            <h3 class="bg-dark text-white p-2">Product Details</h3>
+            <dt>Name</dt>
+            <dd id="lblName"></dd>
+            <dt>Price</dt>
+            <dd id="lblPrice"></dd>
+            <dt>City</dt>
+            <dd id="lblCity"></dd>
+            <dt>Stock</dt>
+            <dd id="lblStock"></dd>
+        </dl>
+        <button onclick="EditClick()" data-bs-target="#register" data-bs-toggle="modal" class="btn btn-warning"> <span
+                class="bi bi-pen-fill"></span> Edit</button>
+    </div>
+
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

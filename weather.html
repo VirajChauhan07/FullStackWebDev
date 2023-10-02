@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .parent-table {
+            border-radius: 10px;
+            background-image: url(public/images/Weather.jpg);
+            background-size: cover;
+        }
+
+        .loc-title {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: white;
+            text-shadow: 1px 1px 1px black;
+            padding: 15px;
+        }
+
+        .loc-title p {
+            font-size: 15px;
+            text-shadow: 1px 1px 1px black;
+        }
+
+        .icons {
+            padding: 15px;
+            font-size: 18px;
+            color: white;
+        }
+
+        .icons span {
+            padding-right: 10px;
+        }
+
+        .unit {
+            font-size: 80px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 1px 1px 1px black;
+            color: yellow;
+            padding: 10px;
+
+        }
+
+        .bi-water {
+            font-size: 80px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 1px 1px 1px black;
+            color: lightblue;
+            padding: 10px;
+        }
+
+        .bi-cloud-fill {
+            font-size: 80px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 1px 1px 1px black;
+            color: gray;
+            padding: 10px;
+        }
+
+        .bi-sun-fill {
+            font-size: 80px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 1px 1px 1px black;
+            color: yellow;
+            padding: 10px;
+        }
+
+        .bi-cloud-sun-fill {
+            font-size: 80px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 1px 1px 1px black;
+            color: rgb(215, 215, 81);
+            padding: 10px;
+        }
+
+        .bi-cloud-rain-fill {
+            font-size: 80px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 1px 1px 1px black;
+            color: gray;
+            padding: 10px;
+        }
+
+        .bi-cloud-rain-heavy-fill {
+            font-size: 80px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 1px 1px 1px black;
+            color: black;
+            padding: 10px;
+        }
+
+        .cf-1 {
+            font-size: 25px;
+            font-family: Arial;
+            color: white;
+            padding: 15px;
+            padding-left: 50px;
+        }
+
+        .cf-2 {
+            font-size: 25px;
+            font-family: Arial;
+            color: white;
+            padding: 15px;
+        }
+
+        .cf-w {
+            font-size: 19px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: yellow;
+
+        }
+
+        .parent-table table {
+            font-family: Arial;
+            color: white;
+        }
+
+        .slider {
+            width: 100%;
+        }
+
+        .details {
+            max-width: 100px;
+            border-radius: 10px;
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="parent-table" width="50%" height="600">
+        <tr>
+            <td class="loc-title" colspan="3" valign="top">
+                Gandhinagar Gujarat
+                <p>Updated few seconds Ago</p>
+            </td>
+            <td class="icons" colspan="2" align="right" valign="top">
+                <span class="bi bi-share-fill"></span>
+                <span class="bi bi-three-dots"></span>
+            </td>
+        </tr>
+        <tr>
+            <td width="10">
+                <span class="bi bi-water"></span>
+            </td>
+            <td class="unit" width="10" align="center">
+                28
+            </td>
+            <td align="center" class="cf-1" width="5">
+                &deg;C <br>
+                <hr color="black" width="10">
+                F
+            </td>
+            <td class="cf-2">
+                30&deg;<br><br>
+                26&deg;
+            </td>
+            <td class="cf-w" align="center">
+                Percipitation:2% <br><br>
+                Wind: 8 KMPH <br><br>
+                Humidity : 61%
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5" class="cf-w">
+                Haze - Tue 8, 11:43 am
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <table width="100%">
+                    <tr align="center">
+                        <td align="left">12 PM</td>
+                        <td>3 PM</td>
+                        <td>6 PM</td>
+                        <td>9 PM</td>
+                        <td>12 AM</td>
+                        <td>3 AM</td>
+                        <td>6 AM</td>
+                        <td align="right">9 AM</td>
+                    </tr>
+                    <tr>
+                        <td colspan="8">
+                            <input type="range" value="1" class="slider">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="7">
+                <table width="100%" cellpadding="5" border="1" frame="void" cellspacing="5">
+                    <tr height="160" bgcolor="transparent">
+                        <td class="details" align="center">
+                            Mon 7 <br>
+                            <span class="bi bi-cloud-fill"></span> <br>
+                            30&deg;<br>
+                            23&deg;
+                        </td>
+                        <td class="details" align="center">
+                            Tue 8 <br>
+                            <span class="bi bi-water"></span> <br>
+                            30&deg;<br>
+                            23&deg;
+                        </td>
+                        <td class="details" align="center">
+                            Wen 9 <br>
+                            <span class="bi bi-cloud-rain-fill"></span> <br>
+                            30&deg;<br>
+                            23&deg;
+                        </td>
+                        <td class="details" align="center">
+                            Thu 10 <br>
+                            <span class="bi bi-cloud-rain-heavy-fill"></span> <br>
+                            30&deg;<br>
+                            23&deg;
+                        </td>
+                        <td class="details" align="center">
+                            Fri 11 <br>
+                            <span class="bi bi-cloud-rain-heavy-fill"></span> <br>
+                            30&deg;<br>
+                            23&deg;
+                        </td>
+                        <td class="details" align="center">
+                            Sat 12 <br>
+                            <span class="bi bi-cloud-sun-fill"></span> <br>
+                            30&deg;<br>
+                            23&deg;
+                        </td>
+                        <td class="details" align="center">
+                            Sun 13 <br>
+                            <span class="bi bi-sun-fill"></span> <br>
+                            30&deg;<br>
+                            23&deg;
+                        </td>
+
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

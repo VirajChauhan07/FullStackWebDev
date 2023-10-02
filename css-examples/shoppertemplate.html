@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .kids {
+            width: 400px;
+            height: 500px;
+            background-image: url("../public/images/shoes.jpg");
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+            overflow: hidden;
+        }
+
+        .kids .buttons {
+            margin-top: 140%;
+            transition: 1s;
+        }
+
+        .kids:hover .buttons {
+            margin-top: 120%;
+            transition: 1s;
+        }
+
+        .kids:hover {
+            background-image: url("../public/images/sandal.jpg");
+            background-size: cover;
+        }
+
+        .buttons span {
+            font-size: 25px;
+            margin-right: 20px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 30px;
+        }
+    </style>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="kids">
+        <div class="buttons">
+            <span class="bi bi-eye"></span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-cart"></span>
+        </div>
+    </div>
+</body>
+
+</html>

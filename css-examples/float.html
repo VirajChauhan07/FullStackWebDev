@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        nav span {
+            padding: 5px;
+            font-size: 20px;
+            text-align: center;
+            margin-left: 10px;
+            background-color: darkcyan;
+            color: white;
+        }
+
+        @media screen and (min-width:700px) {
+            nav {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            nav span {
+                width: 160px;
+            }
+        }
+
+        @media screen and (max-width:699px) {
+            nav span {
+                display: block;
+                text-align: center;
+                margin-bottom: 20px;
+                width: 100px;
+                border-radius: 30px;
+            }
+
+            .menu-item {
+                display: none;
+            }
+
+            nav span:hover .menu-item {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <span class="bi bi-house-fill"> <span class="menu-item">Home</span> </span>
+        <span class="bi bi-mailbox"> <span class="menu-item">Inbox</span> </span>
+        <span class="bi bi-bell"> <span class="menu-item">Notifications</span> </span>
+        <span class="bi bi-youtube"> <span class="menu-item">Videos</span> </span>
+    </nav>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
