@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form input</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons//font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+
+
+    <script type="text/javascript">
+        function SearchClick() {
+            str = document.getElementById("search").value;
+            document.querySelector("p").innerHTML = "Searching For : " + str;
+        }
+    </script>
+</head>
+
+<body class="container-fluid">
+    <header class="mt-4 p-2 input-group text-center w-100">
+        <input type="text" class="form-control" id="search" placeholder="Search Amazon.in">
+        <button onclick="SearchClick()" class="btn btn-warning">
+            <span class="bi bi-search"></span>
+        </button>
+    </header>
+    <p class="h3 text-center text-primary"></p>
+</body>
+
+</html>

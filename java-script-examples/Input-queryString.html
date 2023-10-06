@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QueryString</title>
+    <script type="text/javascript">
+        function bodyload() {
+            category = prompt("Enter your name ", "eg:mobiles,telivison,watches");
+            if (category == null) {
+                document.write("You canceled ");
+            }
+            else if (category == "") {
+                document.write("please provide the category name");
+            }
+            else {
+                document.getElementById("search").innerHTML = category;
+            }
+        }
+    </script>
+</head>
+
+<body onload="bodyload()">
+    <div>
+        <p>searching for : <span id="search"></span> </p>
+    </div>
+</body>
+
+</html>
