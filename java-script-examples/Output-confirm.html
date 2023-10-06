@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm</title>
+    <script>
+        function confirmDelete() {
+            result = confirm("Are you sure want to delete?");
+            if (result == true) {
+                alert("record Deleted");
+            }
+            else {
+                alert("You canceled");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <button onclick="confirmDelete()">Delete</button>
+    </div>
+</body>
+
+</html>

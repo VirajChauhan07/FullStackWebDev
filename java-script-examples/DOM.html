@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Refrence Technique </title>
+    <script type="text/javascript">
+        "use strict"
+        function bodyload() {
+            window.document.images[0].src = "../public/images/floral-dress.jpg";
+            window.document.forms[0].elements[0].value = "login";
+            window.document.forms[0].elements[1].value = "Enter";
+            window.document.forms[1].elements[1].value = "Register";
+
+        }
+    </script>
+</head>
+
+<body onload="bodyload()">
+    <div>
+        <img width="100" height="100" border="1">
+    </div>
+    <div>
+        <form>
+            <h3>Login</h3>
+            UserName: <input type="button" value=""><input type="button" value="">
+        </form>
+    </div>
+    <div>
+        <form>
+            <h3>Register</h3>
+            Your Email: <input type="email" name="" id=""><input type="button" value="">
+        </form>
+    </div>
+</body>
+
+</html>

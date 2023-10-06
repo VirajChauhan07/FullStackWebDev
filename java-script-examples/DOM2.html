@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reference by Name </title>
+    <script type="text/javascript">
+        function bodyload() {
+            poster.src = "../public/images/floral-dress.jpg";
+            frmLogin.btnlogin.value = "Login";
+            frmRegister.btnRegister.value = "Register";
+        }
+    </script>
+</head>
+
+<body onload="bodyload()">
+    <div>
+        <img height="100" width="100" border="1" name="poster">
+    </div>
+    <div>
+        <form name="frmLogin">
+            <h3>Login</h3>
+            UserName : <input type="button" value=""> <input type="button" value="" name="btnlogin">
+        </form>
+    </div>
+    <div>
+        <form name="frmRegister">
+            <h3>Register</h3>
+            Your Email: <input type="email" value=""> <input type="button" value="" name="btnRegister">
+        </form>
+    </div>
+</body>
+
+</html>
