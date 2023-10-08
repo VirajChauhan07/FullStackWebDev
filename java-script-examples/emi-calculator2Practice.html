@@ -15,16 +15,16 @@
         function AmountChange() {
             document.getElementById("txtAmount").value = document.getElementById("amountRange").value;
         }
-        function YearChange() {
-            document.getElementById("txtYears").value = document.getElementById("yearRange").value;
+        function rateChange() {
+            documnet.getElementById("Rate").value = document.getElementById("rateRange").value;
         }
-        function RateChange() {
-            document.getElementById("txtRate").value = document.getElementById("rateRange").value;
+        function datechange() {
+            document.getElementById("Duration").value = document.getElementById("YearRange").value;
         }
         function CalculateClick() {
             var P = parseInt(document.getElementById("txtAmount").value);
-            var N = parseInt(document.getElementById("txtYears").value) * 12;
-            var R = parseFloat(document.getElementById("txtRate").value) / 12 / 100;
+            var R = parseInt(document.getElementById("Rate").value);
+            var N = parseInt(document.getElementById("Duration").value);
             var EMI = P * R * (Math.pow(1 + R, N)) / (Math.pow(1 + R, N)) - 1;
             document.getElementById("result").innerHTML = "Your monthly Installment amount is &#8377;" + Math.round(EMI);
         }
@@ -33,16 +33,18 @@
 
 <body class="container-fluid bg-dark text-white">
     <div class="bg-white text-dark p-3 m-3">
-        <h1 class="text-primary text-center">Personal Loan Calculator</h1>
+        <h1 class="text-primary text-center">
+            Personal loan Calculator
+        </h1>
         <div class="row mt-4">
             <div class="col text-center">
-                Amount you need &#8377; <input type="text" id="txtAmount">
+                Amount You Need &#8377 <input type="text" id="txtAmount">
             </div>
             <div class="col text-center">
-                for <input type="text" size="4" id="txtYears"> years
+                Rate of Intrest % <input type="text" size="4" id="Rate">
             </div>
             <div class="col text-center">
-                Interest rate <input type="text" size="4" id="txtRate"> %
+                Years <input type="text" size="4" id="Duration">
             </div>
         </div>
         <div class="row mt-4">
@@ -50,25 +52,24 @@
                 <input type="range" onchange="AmountChange()" id="amountRange" min="50000" max="500000" value="50000">
             </div>
             <div class="col text-center">
-                <input type="range" onchange="YearChange()" id="yearRange" min="1" max="5" value="1">
+                <input type="range" onchange="rateChange()" id="rateRange" min="8" max="12" value="10">
             </div>
             <div class="col text-center">
-                <input type="range" onchange="RateChange()" id="rateRange" min="8.45" max="12.45" value="8.45"
-                    step="0.01">
+                <input type="range" onchange="datechange()" id="YearRange" min="2" max="10" value="5">
             </div>
         </div>
-        <div class="row mt-2">
+        <div class="row mt-4">
             <div class="col d-flex justify-content-between">
                 <span>&#8377; 50,000</span>
                 <span>&#8377; 5,00,000</span>
             </div>
             <div class="col d-flex justify-content-between">
-                <span>1</span>
-                <span>5</span>
+                <span>8%</span>
+                <span>12%</span>
             </div>
             <div class="col d-flex justify-content-between">
-                <span>8.45%</span>
-                <span>12.45%</span>
+                <span>2</span>
+                <span>10</span>
             </div>
         </div>
         <div class="row mt-4">
